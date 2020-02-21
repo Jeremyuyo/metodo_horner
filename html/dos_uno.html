@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Método de Horner | Jeremy</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fuentes/fonts.css">
+</head>
+
+<body>
+    <h1 class="title_pol">Segundo Grado / Primer Grado</h1>
+    <div id="content">
+        <div class="contenedor_principal">
+            <div class="content_main content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" required="required"
+                        onkeypress="return solonumeros(event)"><span class="text">x²</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" required="required"
+                        onkeypress="return solonumeros(event)"><span class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" required="required"
+                        onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+            <div class="content_secondary content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" required="required"
+                        onkeypress="return solonumeros(event)"><span class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" required="required"
+                        onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_button">
+        <input type="button" value="RESOLVER" onclick="Capturar();" class="btn" id="btnResolver">
+    </div>
+    <table>
+        <tr class="fila">
+            <td id="n1-2"></td>
+            <td id="n2-2"></td>
+            <td id="n3-2"></td>
+            <td id="n4-2"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n5-2"></td>
+            <td id="n6-2"></td>
+            <td id="n7-2"></td>
+            <td id="n8-2"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n9-2"></td>
+            <td id="n10-2"></td>
+            <td id="n11-2"></td>
+            <td id="n12-2"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n13-2"></td>
+            <td id="n14-2"></td>
+            <td id="n15-2"></td>
+            <td id="n16-2"></td>
+        </tr>
+    </table>
+
+    <p id="cociente"></p>
+    <p id="residuo"></p>
+
+    <a href="../index.html" class="btn_return"><span class="icon-arrow_back_ios icon_return"></span>Regresar</a>
+    <!--Script-->
+    <script src="../js/dos_uno.js"></script>
+    <script src="../js/validacion.js"></script>
+    <script src="../js/transformar_a_fraccion.js"></script>
+</body>
+
+</html>

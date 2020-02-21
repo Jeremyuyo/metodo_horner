@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Método de Horner | Jeremy</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fuentes/fonts.css">
+</head>
+
+<body>
+    <h1 class="title_pol">Cuarto Grado / Primer Grado</h1>
+    <div id="content">
+        <div class="contenedor_principal">
+            <div class="content_main content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x⁴</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x³</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x²</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+            <div class="content_secondary content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)"><span
+                        class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_button">
+        <input type="button" value="RESOLVER" onclick="Capturar()" class="btn">
+    </div>
+
+    <table>
+        <tr class="fila">
+            <td id="n1-"></td>
+            <td id="n2-"></td>
+            <td id="n3-"></td>
+            <td id="n4-"></td>
+            <td id="n5-"></td>
+            <td id="n6-"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n7-"></td>
+            <td id="n8-"></td>
+            <td id="n9-"></td>
+            <td id="n10-"></td>
+            <td id="n11-"></td>
+            <td id="n12-"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n13-"></td>
+            <td id="n14-"></td>
+            <td id="n15-"></td>
+            <td id="n16-"></td>
+            <td id="n17-"></td>
+            <td id="n18-"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n19-"></td>
+            <td id="n20-"></td>
+            <td id="n21-"></td>
+            <td id="n22-"></td>
+            <td id="n23-"></td>
+            <td id="n24-"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n25-"></td>
+            <td id="n26-"></td>
+            <td id="n27-"></td>
+            <td id="n28-"></td>
+            <td id="n29-"></td>
+            <td id="n30-"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n31-"></td>
+            <td id="n32-"></td>
+            <td id="n33-"></td>
+            <td id="n34-"></td>
+            <td id="n35-"></td>
+            <td id="n36-"></td>
+        </tr>
+    </table>
+
+    <p id="cociente"></p>
+    <p id="residuo"></p>
+
+    <a href="../index.html" class="btn_return"><span class="icon-arrow_back_ios icon_return"></span>Regresar</a>
+
+    <!--Script-->
+    <script src="../js/cuatro_uno.js"></script>
+    <script src="../js/validacion.js"></script>
+    <script src="../js/transformar_a_fraccion.js"></script>
+</body>
+
+</html>

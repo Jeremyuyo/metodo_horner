@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+//************************************ Index
+.content_all{
+    background: linear-gradient(#FF4BD5,#FF8D96,#FFC563);
+    height: 100vh;
+}
+
+.content_title{
+    padding: 1em 0;
+    .title{
+        text-align: center;
+        font-family: 'martel_sansregular';
+        letter-spacing: 2px;
+        font-size: 2.5em;
+        color: white;
+    }
+}
+
+.content_options{
+    margin-top: 1em;
+    .parrafo{
+        text-align: center;
+        padding: 1.4em 0;
+        padding-bottom: 2.4em;
+        font-family: 'montserratregular';
+        color: rgb(241, 241, 241);
+    }
+    .content_pols{
+        width: 350px;
+        margin: 0 auto;
+        font-family: 'montserratregular';
+        background: rgba(173, 173, 173, 0.4);
+    }
+}
+
+.item_pols{
+    padding: 0.8em 1em;
+    border-bottom: 1px solid snow;
+    cursor: pointer;
+    color: snow;
+    &:nth-child(4){
+        border-bottom: none;
+    }
+    .icono{
+        font-size: 10px;
+        float: right;
+        line-height: 21px;
+    }
+    .submenu_pols{
+        display: none;
+        margin-top: 9px;
+        margin-bottom: -13px;
+        margin-right: -16px !important;
+        margin-left: -16px !important;
+        .subitem_pols{
+            padding: 1em 0;
+            padding-left: 2.5em;
+            //background: #fd7792;
+            background: rgba(219, 219, 219, 0.7);
+            color: #61585a;
+            font-size: 0.9em;
+            &:hover{
+                //background: #fa92a7;   
+                background: rgba(206, 206, 206, 0.5);
+            }
+        }
+    }
+}
+
+
+
+//************************************ Polinomios
+.title_pol{
+    text-align: center;
+    font-family: 'martel_sansregular';
+    padding: 1em 0;
+}
+
+.contenedor_principal{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    .content_main{
+        //background: rgb(164, 89, 173);
+        background: rgba(rgb(129, 76, 190),0.7);
+        border-top-left-radius: 20px;
+        padding: 0 1em;
+        border-bottom: 1px solid white;
+    }
+    .content_secondary{
+        background: rgba(rgb(66, 85, 146), 0.7);
+        border-bottom-right-radius: 20px;
+        padding: 0 1em;
+    }
+}
+
+.content_general{
+    display: block;
+    font-family: 'montserratregular';
+}
+
+
+//Entrada de numeros
+.content_input{
+    display: inline-block;
+    .numero,.numero_{
+        width: 25px;
+        height: 20px;
+        margin: 1em 0.5em;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+    }
+    .text{
+        color: white;
+    }
+}
+
+//Boton para operar
+.content_button{
+    text-align: center;
+    margin: 2em 0;
+    .btn{
+        padding: 0.8em 1em;
+        font-family: 'montserratregular';
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: 2px solid rgb(129, 97, 150);
+        border-radius: 100px;
+        background: transparent;
+        color: rgb(129, 97, 150);
+        transition-duration: 0.4s;
+        &:hover{
+            background: rgb(129, 97, 150);
+            color: white;
+        }
+    }
+}
+
+//Mostrar en la tabla
+table{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    font-family: 'montserratregular';
+
+    td{
+        padding: 0.5em 1em;
+    }
+
+    //**************************** Tabla (Quinto Grado)
+    /*Líneas -- Cinco/Uno*/
+    #n1-5,#n2-5,#n3-5,#n4-5,#n5-5,#n6-5,#n7-5{
+        border-bottom: 2px solid black;
+    }
+    #n43-5,#n44-5,#n45-5,#n46-5,#n47-5,#n48-5,#n49-5{
+        border-top: 2px solid black;
+    }
+    #n7-5,#n14-5,#n21-5,#n28-5,#n35-5,#n42-5,#n49-5{
+        border-left: 2px solid black;
+    }
+    #n1-5,#n8-5,#n15-5,#n22-5,#n29-5,#n36-5,#n43-5{
+        border-right: 2px solid black;
+    }
+
+    /*Líneas -- Cinco/Dos*/
+    #n1_5,#n2_5,#n3_5,#n4_5,#n5_5,#n6_5,#n7_5{
+        border-bottom: 2px solid black;
+    }
+    #n36_5,#n37_5,#n38_5,#n39_5,#n40_5,#n41_5,#n42_5{
+        border-top: 2px solid black;
+    }
+    #n6_5,#n13_5,#n20_5,#n27_5,#n34_5,#n41_5{
+        border-left: 2px solid black;
+    }
+    #n1_5,#n8_5,#n15_5,#n22_5,#n29_5,#n36_5{
+        border-right: 2px solid black;
+    }
+
+    /*Líneas -- Cinco/Tres*/
+    #n1x5,#n2x5,#n3x5,#n4x5,#n5x5,#n6x5,#n7x5{
+        border-bottom: 2px solid black;
+    }
+    #n29x5,#n30x5,#n31x5,#n32x5,#n33x5,#n34x5,#n35x5{
+        border-top: 2px solid black;
+    }
+    #n5x5,#n12x5,#n19x5,#n26x5,#n33x5{
+        border-left: 2px solid black;
+    }
+    #n1x5,#n8x5,#n15x5,#n22x5,#n29x5{
+        border-right: 2px solid black;
+    }
+
+    /*Líneas -- Cinco/Cuatro*/
+    #n1t5,#n2t5,#n3t5,#n4t5,#n5t5,#n6t5,#n7t5{
+        border-bottom: 2px solid black;
+    }
+    #n36t5,#n37t5,#n38t5,#n39t5,#n40t5,#n41t5,#n42t5{
+        border-top: 2px solid black;
+    }
+    #n4t5,#n11t5,#n18t5,#n25t5,#n32t5,#n39t5{
+        border-left: 2px solid black;
+    }
+    #n1t5,#n8t5,#n15t5,#n22t5,#n29t5,#n36t5{
+        border-right: 2px solid black;
+    }
+
+    //**************************** Tabla (Cuarto Grado)
+    /*Líneas -- Cuatro/Uno*/
+    #n1-,#n7-,#n13-,#n19-,#n25-,#n31-{
+        border-right: 2px solid black;
+    }
+    #n1-,#n2-,#n3-,#n4-,#n5-,#n6-{
+        border-bottom: 2px solid black;
+    }
+    #n31-,#n32-,#n33-,#n34-,#n35-,#n36-{
+        border-top: 2px solid black;
+    }
+    #n6-,#n12-,#n18-,#n24-,#n30-,#n36-{
+        border-left: 2px solid black;
+    }
+
+    /*Líneas -- Cuatro/Dos*/
+    #n1,#n7,#n13,#n19,#n25{
+        border-right: 2px solid black;
+    }
+    #n1,#n2,#n3,#n4,#n5,#n6{
+        border-bottom: 2px solid black;
+    }
+    #n25,#n26,#n27,#n28,#n29,#n30{
+        border-top: 2px solid black;
+    }
+    #n5,#n11,#n17,#n23,#n29{
+        border-left: 2px solid black;
+    }
+    
+    /*Líneas -- Cuatro/Tres*/
+    #n1_,#n7_,#n13_,#n19_,#n25_{
+        border-right: 2px solid black;
+    }
+    #n1_,#n2_,#n3_,#n4_,#n5_,#n6_{
+        border-bottom: 2px solid black;
+    }
+    #n25_,#n26_,#n27_,#n28_,#n29_,#n30_{
+        border-top: 2px solid black;
+    }
+    #n4_,#n10_,#n16_,#n22_,#n28_{
+        border-left: 2px solid black;
+    }
+    
+    //**************************** Tabla (Tercer Grado)
+    /*Líneas -- Tres/Dos*/
+    #n1_3,#n6_3,#n11_3,#n16_3{
+        border-right: 2px solid black;
+    }
+    #n1_3,#n2_3,#n3_3,#n4_3,#n5_3{
+        border-bottom: 2px solid black;
+    }
+    #n16_3,#n17_3,#n18_3,#n19_3,#n20_3{
+        border-top: 2px solid black;
+    }
+    #n4_3,#n9_3,#n14_3,#n19_3{
+        border-left: 2px solid black;
+    }
+
+    /*Líneas -- Tres/Uno*/
+    #n1-3,#n6-3,#n11-3,#n16-3,#n21-3{
+        border-right: 2px solid black;
+    }
+    #n1-3,#n2-3,#n3-3,#n4-3,#n5-3{
+        border-bottom: 2px solid black;
+    }
+    #n21-3,#n22-3,#n23-3,#n24-3,#n25-3{
+        border-top: 2px solid black;
+    }
+    #n5-3,#n10-3,#n15-3,#n20-3,#n25-3{
+        border-left: 2px solid black;
+    }
+
+    //**************************** Tabla (Segundo Grado)
+    /*Líneas -- Dos/Uno*/
+    #n1-2,#n5-2,#n9-2,#n13-2{
+        border-right: 2px solid black;
+    }
+    #n1-2,#n2-2,#n3-2,#n4-2{
+        border-bottom: 2px solid black;
+    }
+    #n13-2,#n14-2,#n15-2,#n16-2{
+        border-top: 2px solid black;
+    }
+    #n4-2,#n8-2,#n12-2,#n16-2{
+        border-left: 2px solid black;
+    }
+    
+}
+
+//Cociente y Residuo
+#cociente, #residuo{
+    text-align: center;
+    margin-top:1em;
+    font-family: 'montserratregular';
+    letter-spacing: 2px;
+}
+
+//Boton para regresar al index
+.btn_return{
+    position: relative;
+    padding: 1em 1.3em;
+    //background: rgb(141, 151, 206);
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: rgb(78, 78, 78);
+    font-family: 'montserratregular';
+}
+
+.icon_return{
+    line-height: 50px !important;
+}
+
+//*********************************Adaptable
+@media (max-width: 600px) {
+
+    //Titulo de los documentos
+    .title_pol{
+        font-size: 1.4em;
+        padding: 2em 0;
+    }
+
+    //Posicionar en el centro los inputs
+    .contenedor_principal{
+        width: 330px;
+    }
+
+    //inputs
+    .responsive_n{
+        width: 19px !important;
+    }
+
+    //Entrada de numeros
+    .content_input{
+        .numero,.numero_{
+            width: 27px;
+            height: 23px;
+            margin: 1em 0.14em;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    
+    //Contenedor de las opciones para los polinomios
+    .content_options{
+        .content_pols{
+            width: 320px;
+        }
+    }
+
+    //Boton para regresar al index
+    .btn_return{
+        font-size: 1em;
+    }
+    .icon_return{
+        line-height: 80px !important;
+    }
+  }
+
+  @media (min-width: 600px) and (orientation: landscape) {
+    //Contenedor general de todo en el index
+    .content_all{
+        height: 70vw;
+    }
+  }
+
+  @media (min-width: 900px) {
+    //Contenedor general de todo en el index
+    .content_all{
+        height: 100vh;
+    }
+  }

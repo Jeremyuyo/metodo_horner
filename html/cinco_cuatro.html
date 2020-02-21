@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Método de Horner | Jeremy</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fuentes/fonts.css">
+</head>
+
+<body>
+    <h1 class="title_pol">Quinto Grado / Cuarto Grado</h1>
+    <div id="content">
+        <div class="contenedor_principal">
+            <div class="content_main content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x⁵</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x⁴</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x³</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x²</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)"><span
+                        class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero" onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+            <div class="content_secondary content_general">
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)"><span
+                        class="text">x⁴</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)"><span
+                        class="text">x³</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)"><span
+                        class="text">x²</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)"><span
+                        class="text">x</span>
+                </div>
+                <div class="content_input">
+                    <input type="text" name="numero" class="numero_" onkeypress="return solonumeros(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_button">
+        <input type="button" value="RESOLVER" onclick="Capturar()" class="btn">
+    </div>
+
+    <table>
+        <tr class="fila">
+            <td id="n1t5"></td>
+            <td id="n2t5"></td>
+            <td id="n3t5"></td>
+            <td id="n4t5"></td>
+            <td id="n5t5"></td>
+            <td id="n6t5"></td>
+            <td id="n7t5"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n8t5"></td>
+            <td id="n9t5"></td>
+            <td id="n10t5"></td>
+            <td id="n11t5"></td>
+            <td id="n12t5"></td>
+            <td id="n13t5"></td>
+            <td id="n14t5"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n15t5"></td>
+            <td id="n16t5"></td>
+            <td id="n17t5"></td>
+            <td id="n18t5"></td>
+            <td id="n19t5"></td>
+            <td id="n20t5"></td>
+            <td id="n21t5"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n22t5"></td>
+            <td id="n23t5"></td>
+            <td id="n24t5"></td>
+            <td id="n25t5"></td>
+            <td id="n26t5"></td>
+            <td id="n27t5"></td>
+            <td id="n28t5"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n29t5"></td>
+            <td id="n30t5"></td>
+            <td id="n31t5"></td>
+            <td id="n32t5"></td>
+            <td id="n33t5"></td>
+            <td id="n34t5"></td>
+            <td id="n35t5"></td>
+        </tr>
+        <tr class="fila">
+            <td id="n36t5"></td>
+            <td id="n37t5"></td>
+            <td id="n38t5"></td>
+            <td id="n39t5"></td>
+            <td id="n40t5"></td>
+            <td id="n41t5"></td>
+            <td id="n42t5"></td>
+        </tr>
+    </table>
+
+    <p id="cociente"></p>
+    <p id="residuo"></p>
+
+    <a href="../index.html" class="btn_return"><span class="icon-arrow_back_ios icon_return"></span>Regresar</a>
+
+    <!--Script-->
+    <script src="../js/cinco_cuatro.js"></script>
+    <script src="../js/validacion.js"></script>
+    <script src="../js/transformar_a_fraccion.js"></script>
+</body>
+
+</html>
